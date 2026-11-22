@@ -1,7 +1,7 @@
 # 🏦 BankWeb (은행 업무 시스템)
 
 ## 🔗 GitHub Repository
-(레포지토리 주소 입력)
+https://github.com/HyeonHo41/YuhanBank-Project
 
 ---
 
