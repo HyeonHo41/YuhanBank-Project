@@ -1,2 +1,3 @@
-build//nbin//n*.class/n
 /build/
+/bin/
+*.class
