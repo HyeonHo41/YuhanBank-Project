@@ -2,7 +2,7 @@ package bank.common;
 
 import java.sql.Connection;
 
-import bank.util.DBUtil;
+import bank.common.util.DBUtil;
 
 public class test {
 	

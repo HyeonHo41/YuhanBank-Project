@@ -1,10 +1,10 @@
-package bank.util;
+package bank.common.util;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-import bank.exception.BankException;
+import bank.common.exception.BankException;
 
 
 public class PasswordUtil {
@@ -18,8 +18,10 @@ public class PasswordUtil {
             MessageDigest md = MessageDigest.getInstance("SHA-256");
             byte[] hash = md.digest(raw.getBytes(StandardCharsets.UTF_8));
             StringBuilder sb = new StringBuilder(64);
+            
             for (byte b : hash) sb.append(String.format("%02x", b));
             return sb.toString();
+            
         } catch (NoSuchAlgorithmException e) {
             throw new IllegalStateException("SHA-256 을 사용할 수 없습니다.", e);
         }
@@ -35,3 +37,4 @@ public class PasswordUtil {
         }
     }
 }
+

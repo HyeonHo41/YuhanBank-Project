@@ -1,8 +1,7 @@
-package bank.exception;
+package bank.common.exception;
 
 public class BankException extends RuntimeException{
-
-	// 부모 예외 처리
+	
 	public BankException(String message) {
 		super(message);
 	}
@@ -10,8 +9,6 @@ public class BankException extends RuntimeException{
 	public BankException(String message, Throwable cause) {
 		super(message, cause);
 	}
-	
-	
-	
-	
+
+
 }

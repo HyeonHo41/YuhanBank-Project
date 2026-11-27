@@ -1,4 +1,4 @@
-package bank.filter;
+package bank.common.filter;
 
 public class LoginFilter {
 
